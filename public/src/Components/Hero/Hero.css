@@ -20,7 +20,7 @@
   justify-content: center;
   gap: 20px;
   padding-left: 180px;
-  line-height: 0.6;
+  line-height: 0.64;
 }
 .hero-left h2 {
   color: #090909;
@@ -29,15 +29,15 @@
 }
 .hero-left p {
   color: #171717;
-  font-size: 100px;
+  font-size: 6rem;
   font-weight: 700;
 }
-.hero-hand-icon {
+.hero-smile-icon {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.hero-hand-icon img {
+.hero-smile-icon img {
   width: 100px;
 }
 .hero-latest-btn {
@@ -58,4 +58,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-left {
+    justify-content: start;
+    margin-top: 70px;
+    padding-left: 70px;
+  }
+  .hero-left p {
+    font-size: 5rem;
+  }
+  .hero-right img {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .hero-left {
+    gap: 5px;
+  }
+  .hero-left p {
+    font-size: 4.2rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .hero-left {
+    justify-content: start;
+    margin-top: 40px;
+    padding-left: 40px;
+  }
+  .hero-right {
+    display: none;
+  }
+  .hero-left p {
+    font-size: 4rem;
+  }
+  .hero-smile-icon img {
+    width: 70px;
+  }
+
+  .hero-latest-btn {
+    width: 90%;
+    height: 60px;
+    gap: 40px;
+  }
+  .hero-latest-btn img {
+    width: 70px;
+  }
 }
