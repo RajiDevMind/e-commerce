@@ -1,6 +1,6 @@
-.active {
+/* .active {
   background-color: #3bbf;
-}
+} */
 
 .logo {
   width: 4rem;
@@ -41,6 +41,10 @@
   justify-content: center;
   gap: 3px;
   cursor: pointer;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #626262;
 }
 .nav-menu hr {
   border: none;
