@@ -1,0 +1,39 @@
+.new_collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.new_collections h1 {
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 600;
+  align-text: center;
+}
+.new_collections hr {
+  width: 200px;
+  height: 16px;
+  border-radius: 10px;
+  background: #252525;
+}
+.new_collections-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.collections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  .new_collections h1 {
+    font-size: 2rem;
+  }
+}
