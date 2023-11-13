@@ -9,7 +9,6 @@
 }
 
 .hero {
-  height: 100vh;
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
   display: flex;
 }
@@ -74,6 +73,9 @@
   }
 }
 @media screen and (max-width: 870px) {
+  .hero {
+    max-height: 75vh;
+  }
   .hero-left {
     gap: 5px;
   }
