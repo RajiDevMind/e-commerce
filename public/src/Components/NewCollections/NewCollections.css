@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .new_collections h1 {
   color: #171717;
@@ -31,6 +31,9 @@
   flex-grow: 1;
   gap: 20px;
   margin-top: 20px;
+}
+.collections img {
+  min-width: 270px;
 }
 @media screen and (max-width: 500px) {
   .new_collections h1 {
