@@ -1,16 +1,16 @@
 // import { AiFillStar } from "react-icons/ai";
-import img1 from "../assets/img-1jpg";
-import img2 from "../assets/img-2jpg";
-import img3 from "../assets/img-3jpg";
-import img4 from "../assets/img-4jpg";
-import img5 from "../assets/img-5jpg";
-import img6 from "../assets/img-6jpg";
-import img7 from "../assets/img-7jpg";
-import img8 from "../assets/img-8jpg";
-import img9 from "../assets/img-9jpg";
-import img10 from "../assets/img-10jpg";
-import img11 from "../assets/img-11jpg";
-import img12 from "../assets/img-12jpg";
+import img1 from "./img-1.jpg";
+import img2 from "./img-2.jpg";
+import img3 from "./img-3.jpg";
+import img4 from "./img-4.jpg";
+import img5 from "./img-5.png";
+import img6 from "./img-6.png";
+import img7 from "./img-7.png";
+import img8 from "./img-8.png";
+import img9 from "./img-9.png";
+import img10 from "./img-10.png";
+import img11 from "./img-11.png";
+import img12 from "./img-12.png";
 
 const data = [
   {
