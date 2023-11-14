@@ -13,6 +13,7 @@ import flatsBanner from "./Components/assets/banner2.jpg";
 import heelsBanner from "./Components/assets/banner3.jpg";
 import sandalsBanner from "./Components/assets/banner4.jpg";
 import sneakersBanner from "./Components/assets/banner5.jpg";
+import SignIn from "./Pages/SignIn";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         </Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<SignUp />} />
+        <Route path="/register" element={<SignIn />} />
       </Routes>
       <Footer />
     </div>

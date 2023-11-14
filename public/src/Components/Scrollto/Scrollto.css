@@ -6,12 +6,16 @@
 .scrollup {
   color: red;
   font-size: 40px;
-  margin-left: 100px;
+  margin-left: 250px;
   cursor: pointer;
 
   animation: bounce 2s ease-in-out infinite;
 }
-
+@media screen and (max-width: 750px) {
+  .scrollup {
+    margin: 0;
+  }
+}
 @keyframes bounce {
   0% {
     transform: scale(1);

@@ -111,6 +111,6 @@ h4 {
 }
 p {
   font-size: 0.975rem;
-  color: var(--clr-white);
+  /* color: var(--clr-white); */
   letter-spacing: var(--spacing);
 }
