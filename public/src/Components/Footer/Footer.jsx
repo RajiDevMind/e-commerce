@@ -6,9 +6,11 @@ import icon2 from "../assets/square-github.svg";
 import icon3 from "../assets/square-whatsapp.svg";
 import icon4 from "../assets/square-instagram.svg";
 import { Link } from "react-router-dom";
+import Scrolling from "../Scrollto/Scrollto";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const backToTop = window.scrollTo(0, 0);
   return (
     <div className="footer">
       <div className="footer-logo">
@@ -45,6 +47,7 @@ const Footer = () => {
           <Link target="_blank" to="mailto:roi4tech@gmail.com">
             <img src={icon4} alt="" />
           </Link>
+          <Scrolling />
         </div>
       </div>
       <div className="footer-copyright">

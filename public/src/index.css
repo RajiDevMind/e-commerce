@@ -111,7 +111,6 @@ h4 {
 }
 p {
   font-size: 0.975rem;
-  margin-bottom: 1.25rem;
   color: var(--clr-white);
   letter-spacing: var(--spacing);
 }
