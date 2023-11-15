@@ -14,6 +14,18 @@ import img12 from "./img-12.png";
 
 const data = [
   {
+    img: img4,
+    title: "black suits",
+    // star: <AiFillStar className="rating-star" />,
+    reviews: "(123 reviews)",
+    old_price: "$140,00",
+    new_price: "200",
+    company: "Nike",
+    color: "white",
+    id: 4,
+    category: "wears",
+  },
+  {
     img: img1,
     title: "men shirt",
     // star: <AiFillStar className="rating-star" />,
@@ -22,6 +34,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 1,
     category: "wears",
   },
   {
@@ -33,6 +46,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 2,
     category: "wears",
   },
   {
@@ -44,19 +58,10 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 3,
     category: "wears",
   },
-  {
-    img: img4,
-    title: "black suits",
-    // star: <AiFillStar className="rating-star" />,
-    reviews: "(123 reviews)",
-    old_price: "$140,00",
-    new_price: "200",
-    company: "Nike",
-    color: "white",
-    category: "wears",
-  },
+
   {
     img: img5,
     title: "ribbon tie",
@@ -66,6 +71,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 5,
     category: "wears",
   },
   {
@@ -77,6 +83,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 6,
     category: "sneakers",
   },
   {
@@ -88,6 +95,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 7,
     category: "sneakers",
   },
   {
@@ -99,6 +107,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 8,
     category: "wears",
   },
   {
@@ -110,6 +119,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 9,
     category: "wears",
   },
   {
@@ -121,6 +131,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 10,
     category: "wears",
   },
   {
@@ -132,6 +143,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 11,
     category: "wears",
   },
   {
@@ -143,6 +155,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "white",
+    id: 12,
     category: "sneakers",
   },
   {
@@ -154,6 +167,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "red",
+    id: 13,
     category: "sneakers",
   },
 
@@ -166,6 +180,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "green",
+    id: 14,
     category: "sneakers",
   },
   {
@@ -177,6 +192,7 @@ const data = [
     new_price: "200",
     company: "Adidas",
     color: "black",
+    id: 15,
     category: "sneakers",
   },
   {
@@ -188,6 +204,7 @@ const data = [
     new_price: "200",
     company: "Vans",
     color: "green",
+    id: 16,
     category: "flats",
   },
   {
@@ -199,6 +216,7 @@ const data = [
     new_price: "50",
     company: "Adidas",
     color: "black",
+    id: 17,
     category: "flats",
   },
 
@@ -211,6 +229,7 @@ const data = [
     new_price: "50",
     company: "Vans",
     color: "white",
+    id: 18,
     category: "flats",
   },
 
@@ -223,6 +242,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "green",
+    id: 19,
     category: "sneakers",
   },
 
@@ -235,6 +255,7 @@ const data = [
     new_price: "200",
     company: "Adidas",
     color: "blue",
+    id: 20,
     category: "sneakers",
   },
 
@@ -247,6 +268,7 @@ const data = [
     new_price: "150",
     company: "Puma",
     color: "green",
+    id: 21,
     category: "sneakers",
   },
   {
@@ -258,6 +280,7 @@ const data = [
     new_price: "150",
     company: "Puma",
     color: "red",
+    id: 22,
     category: "sneakers",
   },
   {
@@ -269,6 +292,7 @@ const data = [
     new_price: "150",
     company: "Puma",
     color: "black",
+    id: 23,
     category: "sneakers",
   },
   {
@@ -280,6 +304,7 @@ const data = [
     new_price: "150",
     company: "Puma",
     color: "white",
+    id: 24,
     category: "sneakers",
   },
   {
@@ -291,6 +316,7 @@ const data = [
     new_price: "150",
     company: "Puma",
     color: "black",
+    id: 25,
     category: "sneakers",
   },
 
@@ -303,6 +329,7 @@ const data = [
     new_price: "100",
     company: "Puma",
     color: "green",
+    id: 26,
     category: "sneakers",
   },
   {
@@ -314,6 +341,7 @@ const data = [
     new_price: "100",
     company: "Vans",
     color: "red",
+    id: 27,
     category: "flats",
   },
   {
@@ -325,6 +353,7 @@ const data = [
     new_price: "100",
     company: "Vans",
     color: "white",
+    id: 28,
     category: "sandals",
   },
   {
@@ -336,6 +365,7 @@ const data = [
     new_price: "100",
     company: "Vans",
     color: "blue",
+    id: 29,
     category: "sandals",
   },
   {
@@ -347,6 +377,7 @@ const data = [
     new_price: "50",
     company: "Nike",
     color: "black",
+    id: 30,
     category: "sandals",
   },
   {
@@ -358,6 +389,7 @@ const data = [
     new_price: "50",
     company: "Vans",
     color: "black",
+    id: 31,
     category: "heels",
   },
   {
@@ -369,6 +401,7 @@ const data = [
     new_price: "100",
     company: "puma",
     color: "black",
+    id: 32,
     category: "heels",
   },
   {
@@ -380,6 +413,7 @@ const data = [
     new_price: "150",
     company: "Nike",
     color: "red",
+    id: 33,
     category: "heels",
   },
   {
@@ -391,6 +425,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "red",
+    id: 34,
     category: "sneakers",
   },
 
@@ -403,6 +438,7 @@ const data = [
     new_price: "200",
     company: "Nike",
     color: "black",
+    id: 35,
     category: "heels",
   },
   {
@@ -414,6 +450,7 @@ const data = [
     new_price: "50",
     company: "Adidas",
     color: "black",
+    id: 36,
     category: "heels",
   },
   {
@@ -425,6 +462,7 @@ const data = [
     new_price: "150",
     company: "Adidas",
     color: "white",
+    id: 37,
     category: "heels",
   },
   {
@@ -436,6 +474,7 @@ const data = [
     new_price: "50",
     company: "Adidas",
     color: "black",
+    id: 38,
     category: "heels",
   },
   {
@@ -447,6 +486,7 @@ const data = [
     new_price: "50",
     company: "Adidas",
     color: "black",
+    id: 39,
     category: "flats",
   },
 ];

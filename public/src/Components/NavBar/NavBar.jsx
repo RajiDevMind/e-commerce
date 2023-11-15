@@ -20,37 +20,38 @@ const NavBar = () => {
           setBarMenu(!barMenu);
         }}
       ></i>
-
       <nav className={barMenu ? "open" : ""}>
-        <ul className="nav-menu">
-          <li onClick={() => setMenu("shop")}>
-            <Link to="/">Shop</Link>
-            {menu === "shop" ? <hr /> : <></>}
-          </li>
-          <li onClick={() => setMenu("wears")}>
-            <NavLink to="/wears">Wears</NavLink>
-            {menu === "wears" ? <hr /> : <></>}
-          </li>
-          <li onClick={() => setMenu("sneakers")}>
-            <NavLink to="/sneakers">Sneakers</NavLink>
+        <div className="navflex">
+          <ul className="nav-menu">
+            <li onClick={() => setMenu("shop")}>
+              <Link to="/">Shop</Link>
+              {menu === "shop" ? <hr /> : <></>}
+            </li>
+            <li onClick={() => setMenu("wears")}>
+              <NavLink to="/wears">Wears</NavLink>
+              {menu === "wears" ? <hr /> : <></>}
+            </li>
+            <li onClick={() => setMenu("sneakers")}>
+              <NavLink to="/sneakers">Sneakers</NavLink>
 
-            {menu === "sneakers" ? <hr /> : <></>}
-          </li>
-          <li onClick={() => setMenu("flats")}>
-            <NavLink to="/flats">Flats</NavLink>
+              {menu === "sneakers" ? <hr /> : <></>}
+            </li>
+            <li onClick={() => setMenu("flats")}>
+              <NavLink to="/flats">Flats</NavLink>
 
-            {menu === "flats" ? <hr /> : <></>}
-          </li>
-          <li onClick={() => setMenu("sandals")}>
-            <NavLink to="/sandals">Sandals</NavLink>
+              {menu === "flats" ? <hr /> : <></>}
+            </li>
+            <li onClick={() => setMenu("sandals")}>
+              <NavLink to="/sandals">Sandals</NavLink>
 
-            {menu === "sandals" ? <hr /> : <></>}
-          </li>
-          <li onClick={() => setMenu("heels")}>
-            <NavLink to="/heels">Heels</NavLink>
+              {menu === "sandals" ? <hr /> : <></>}
+            </li>
+            <li onClick={() => setMenu("heels")}>
+              <NavLink to="/heels">Heels</NavLink>
 
-            {menu === "heels" ? <hr /> : <></>}
-          </li>
+              {menu === "heels" ? <hr /> : <></>}
+            </li>
+          </ul>
           <div className="nav-login-cart">
             <NavLink to="/login">
               <button>Login</button>
@@ -62,7 +63,7 @@ const NavBar = () => {
 
             <div className="nav-cart-count">0</div>
           </div>
-        </ul>
+        </div>
       </nav>
     </div>
   );

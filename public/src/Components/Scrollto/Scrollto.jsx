@@ -9,9 +9,9 @@ const Scrolling = () => {
     });
   };
   return (
-    <button className="scroll" onClick={scrollToTop}>
+    <div className="scroll" onClick={scrollToTop}>
       <i className="fa fa-chevron-circle-up scrollup" aria-hidden="true"></i>
-    </button>
+    </div>
   );
 };
 

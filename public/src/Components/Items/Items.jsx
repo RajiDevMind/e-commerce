@@ -1,10 +1,13 @@
 import React from "react";
 import "./items.css";
+import { Link } from "react-router-dom";
 
-const Items = ({ img, title, new_price, old_price }) => {
+const Items = ({ id, img, title, new_price, old_price }) => {
   return (
     <div className="item">
-      <img src={img} alt="" />
+      <Link to={`/product/${id}`}>
+        <img src={img} alt="" />
+      </Link>
       <p>{title}</p>
       <div className="item-prices">
         <div className="item-prices-new">${new_price}</div>

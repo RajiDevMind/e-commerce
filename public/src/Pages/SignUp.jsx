@@ -5,14 +5,33 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <div className="login_signup">
-      <div className="loginsignup_container">
+      <form className="loginsignup_container">
         <h1>sign up</h1>
         <div className="fields">
-          <input type="text" placeholder="full name" />
-          <input type="email" name="" placeholder="email address" />
-          <input type="password" name="" placeholder="password" />
+          <input
+            name="name"
+            type="text"
+            required
+            minLength={5}
+            placeholder="full name"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            minLength={5}
+            placeholder="email address"
+          />
+          <input
+            type="password"
+            name="password"
+            required
+            maxLength={10}
+            minLength={5}
+            placeholder="password"
+          />
         </div>
-        <button>Continue</button>
+        <button type="submit">Continue</button>
         <div className="login">
           <p>
             Already have an account?{" "}
@@ -25,7 +44,7 @@ const SignUp = () => {
             <p>By continue i agree to use the terms and policy.</p>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

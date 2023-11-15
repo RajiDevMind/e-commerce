@@ -1,0 +1,36 @@
+.productdisplay {
+  display: flex;
+  margin: 0 170px;
+  background: green;
+}
+.productdisplay_left {
+  display: flex;
+}
+.display_img_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+.display_img_list img {
+  object-fit: cover;
+  flex-grow: 1;
+  width: 80%;
+}
+.mainimg {
+  object-fit: cover;
+  flex-grow: 1;
+  height: 500px;
+}
+@media screen and (max-width: 800px) {
+  .productdisplay {
+    display: block;
+    margin: 0;
+    padding: 5px;
+  }
+  .mainimg {
+    object-fit: cover;
+    flex-grow: 1;
+    height: 300px;
+  }
+}

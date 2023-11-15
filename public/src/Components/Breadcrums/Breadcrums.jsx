@@ -1,0 +1,18 @@
+import React from "react";
+import "./Breadcrums.css";
+
+const Breadcrums = ({ title, category, img }) => {
+  console.log(category);
+
+  return (
+    <div className="breadcrums">
+      HOME <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>SHOP{" "}
+      <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      {category}
+      <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      {title}
+    </div>
+  );
+};
+
+export default Breadcrums;

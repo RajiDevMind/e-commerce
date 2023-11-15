@@ -9,7 +9,7 @@
 }
 
 .hero {
-  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  background: linear-gradient(180deg, #fde1ff, #ffaf37 60%);
   display: flex;
 }
 .hero-left {
