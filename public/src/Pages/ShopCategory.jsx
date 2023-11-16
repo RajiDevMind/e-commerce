@@ -5,12 +5,12 @@ import { ShopContext } from "../Context/ShopContext";
 import Items from "../Components/Items/Items";
 import { Link } from "react-router-dom";
 
-const ShopCategory = (props) => {
+const ShopCategory = ({ category, banner }) => {
   const allProducts = useContext(ShopContext);
 
   return (
     <div className="shopCategory">
-      <img className="shop_banner" src={props.banner} alt="" />
+      <img className="shop_banner" src={banner} alt="" />
       <div className="shopcategory_indexSort">
         <p>
           <span>Showing 1-12</span> out of all products
@@ -22,9 +22,7 @@ const ShopCategory = (props) => {
       </div>
       <div className="shopcategory_products">
         {allProducts.allProducts.map((item, i) => {
-          if (!allProducts) {
-            return <p>Loading...</p>;
-          } else if (props.category === item.category) {
+          if (category === item.category) {
             const { title, img, id, new_price, old_price } = item;
             return (
               <Items

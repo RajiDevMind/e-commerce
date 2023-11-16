@@ -52,10 +52,10 @@ const ProductDisplay = ({
         </div>
         <button type="submit">add to cart</button>
         <p className="productcategory">
-          <span>Category</span>
-          {category}
+          <span>Category</span> {category}
         </p>
       </div>
+      <hr />
     </div>
   );
 };

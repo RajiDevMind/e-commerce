@@ -9,8 +9,6 @@ const Breadcrums = ({ title, category, img }) => {
       HOME <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>SHOP{" "}
       <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
       {category}
-      <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
-      {title}
     </div>
   );
 };

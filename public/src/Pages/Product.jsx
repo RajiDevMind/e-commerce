@@ -3,6 +3,7 @@ import { ShopContext } from "../Context/ShopContext";
 import { useParams } from "react-router-dom";
 import Breadcrums from "../Components/Breadcrums/Breadcrums";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
+import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
 
 const Product = () => {
   const { allProducts } = useContext(ShopContext);
@@ -13,8 +14,9 @@ const Product = () => {
 
   return (
     <div>
-      <Breadcrums id={id} title={title} category={category} />
+      <Breadcrums id={id} category={category} />
       <ProductDisplay
+        id={id}
         title={title}
         img={img}
         reviews={reviews}
@@ -22,6 +24,10 @@ const Product = () => {
         new_price={new_price}
         old_price={old_price}
       />
+      <hr
+        style={{ height: "10px", background: "#a5a4a4", marginTop: "10px" }}
+      />
+      <DescriptionBox />
     </div>
   );
 };
