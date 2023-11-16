@@ -38,6 +38,18 @@
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+  .productdisplay {
+    margin: 0 50px;
+  }
+  .size {
+    gap: 5px;
+  }
+  .size div {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .productdisplay {
     margin: 10px;

@@ -27,3 +27,8 @@
   margin-top: 5px;
   border-radius: var(--radius);
 }
+@media screen and (max-width: 800px) {
+  .descriptionbox {
+    margin: 20px;
+  }
+}
