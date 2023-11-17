@@ -2,6 +2,7 @@
   flex-basis: 160px;
   flex-grow: 1;
   border: 1px solid;
+  border-radius: var(--radius);
 }
 .item img {
   flex-grow: 1;
@@ -31,5 +32,23 @@
 }
 .item:hover {
   transform: scale(1.05);
-  transition: 0.3s ease;
+  background: rgb(211, 211, 211, 0.4);
+}
+.addPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.addbtn {
+  padding: 5px;
+  font-size: 16px;
+  margin: 0 5px 5px 0;
+  background: #0cf200;
+  border-radius: var(--radius);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.item:hover .addbtn {
+  /* background: #ffffff; */
+  background: linear-gradient(180deg, #fde1ff, #ffaf37 60%);
 }

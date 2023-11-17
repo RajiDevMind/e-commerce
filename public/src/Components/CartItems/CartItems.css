@@ -1,0 +1,132 @@
+.CartItems {
+  margin: 100px 170px;
+}
+.CartItems hr {
+  height: 3px;
+  background: #898989;
+}
+.format_carts {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1050px) {
+  .CartItems {
+    margin: 60px 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .CartItems {
+    margin: 10px;
+  }
+  .format_carts {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cartdisplay {
+    display: flex;
+    margin-left: 20px;
+    gap: 30px;
+  }
+  .cartdisplay hr {
+    display: none;
+  }
+  .format_carts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 15px;
+  }
+  .cartdisplay {
+    margin-left: 0;
+    gap: 10px;
+  }
+  .hidecart p {
+    display: none;
+  }
+}
+.format_items {
+  font-size: 25px;
+  font-weight: 700;
+}
+.format_carts img {
+  height: 72px;
+}
+
+.fa-plus {
+  font-size: 1rem;
+  color: #1fef00;
+  cursor: pointer;
+  text-shadow: 2px 2px black;
+}
+.fa-times {
+  font-size: 1rem;
+  color: #ff0000;
+  cursor: pointer;
+}
+.cartItem_quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #ffffff;
+  border-radius: var(--radius);
+  font-size: 18px;
+  font-weight: 700;
+}
+/* total cart summary */
+
+.totalItems_cart {
+  display: flex;
+  margin: 100px 0;
+}
+.totalCart {
+  flex: 1;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 40px;
+}
+.cart_total_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 700px;
+}
+.totalCart button {
+  height: 52px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  border-radius: var(--radius);
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cartpromo {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+.promobox {
+  margin-top: 15px;
+  padding-left: 10px;
+  height: 58px;
+  background: #ededed;
+  border-radius: var(--radius);
+}
+.promobox input {
+  border: none;
+  outline: none;
+  height: 58px;
+  background: transparent;
+  font-size: 16px;
+}

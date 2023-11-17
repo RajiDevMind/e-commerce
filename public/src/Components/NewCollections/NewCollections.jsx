@@ -3,8 +3,6 @@ import "./NewCollections.css";
 import allProduct from "../assets/allproducts.jsx";
 import Items from "../Items/Items";
 
-const random = Math.random();
-
 const NewCollections = () => {
   return (
     <div className="new_collections">

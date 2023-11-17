@@ -1,3 +1,8 @@
+.active {
+  background: #ffb644;
+  padding: 2px 5px;
+  border-radius: var(--radius);
+}
 .logo {
   width: 4rem;
 }

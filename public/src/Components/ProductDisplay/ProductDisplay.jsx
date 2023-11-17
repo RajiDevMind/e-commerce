@@ -11,7 +11,7 @@ const ProductDisplay = ({
   reviews,
   category,
 }) => {
-  const { addToCart } = useContext(ShopContext);
+  const { cartItems, allProducts, addToCart } = useContext(ShopContext);
 
   return (
     <div className="productdisplay">

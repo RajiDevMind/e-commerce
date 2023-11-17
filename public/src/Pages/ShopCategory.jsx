@@ -13,7 +13,7 @@ const ShopCategory = ({ category, banner }) => {
       <img className="shop_banner" src={banner} alt="" />
       <div className="shopcategory_indexSort">
         <p>
-          <span>Showing 1-12</span> out of all products
+          <span>Showing {category} section</span>, out of all products
         </p>
         <div className="shopcategory_sort">
           Sort by{" "}
@@ -39,7 +39,7 @@ const ShopCategory = ({ category, banner }) => {
           }
         })}
       </div>
-      <Link to="/">
+      <Link to="/wears">
         <div className="shopcategory_loadmore">Explore more</div>
       </Link>
     </div>
