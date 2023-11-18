@@ -26,12 +26,17 @@ const port = 4100;
 
 const start = async () => {
   try {
+    await connectDB(process.env.MONGO_URL);
     app.listen(
       port,
       console.log(`Server is listening on http://localhost:${port}`)
     );
   } catch (err) {
-    console.log(err);
+    if (err.hostname === "_mongodb._tcp.shoppingcluster.lvoxaoq.mongodb.net") {
+      console.log("Unable to connect! check ur internet connection");
+    } else {
+      console.log(err);
+    }
   }
 };
 start();
