@@ -4,13 +4,16 @@ const cors = require("cors");
 const app = express();
 const userRouter = require("./routes/auth");
 const connectDB = require("./db/connect");
+const cookieParser = require("cookie-parser");
 
 // middlewares
 app.use(express.json());
+app.use(cookieParser());
+
 app.use(
   cors({
     credentials: true,
-    origin: "https://localhost:5173",
+    origin: "http://localhost:5173",
     method: ["GET", "POST", "PUT", "DELETE"],
   })
 );
@@ -32,10 +35,10 @@ const start = async () => {
       console.log(`Server is listening on http://localhost:${port}`)
     );
   } catch (err) {
-    if (err.hostname === "_mongodb._tcp.shoppingcluster.lvoxaoq.mongodb.net") {
+    if (err.hostname === "_mongodb._tcp.cluster0.xo8jgyh.mongodb.net") {
       console.log("Unable to connect! check ur internet connection");
     } else {
-      console.log(err);
+      console.log("Unexpected error", err);
     }
   }
 };
